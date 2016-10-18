@@ -199,6 +199,7 @@ class GUI:
         #this is the callback method for the 'write to csv' button
         import csv
         file_name = 'image_metadata_db.txt'
+        import os.path
 
         if self.ready_to_write: #checks data has been previously validated
             ofile = open(file_name, 'a') #open with write('w') or append('a') privelages, I have used append so the user can add records onto the existing file
