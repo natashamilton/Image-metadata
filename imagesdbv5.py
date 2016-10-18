@@ -9,6 +9,7 @@
 # Version History: Tkinter textboxes now expand to fill screen
 #                  Added validation for image id so now has to be a number between 1 and 10000
 #                  The dropdown menu no longer sits behind the information button
+#                  Added in "import os.path" which allows the program to read the existing file for duplicate records
 # Author:      Natasha Milton
 #
 # Created:     06/10/2016
@@ -174,7 +175,7 @@ class GUI:
                     validated_image_id = int(self.image_id_field.get())#make into int and store as 'validated' variable
                     self.recordlist.append(Images(self.image_title_field.get(), self.image_id_field.get(), self.filename_field.get(), self.img_extension_field.get(), self.img_desc_field.get(), self.image_owner_field.get(), self.licence_type_field.get()))
                     self.ready_to_write= True
-                    if (validated_image_id <1 or validated_image_id >10001):
+                    if (validated_image_id <1 or validated_image_id >10000):
                         tkinter.messagebox.showwarning('Warning!','Please enter a number between 1 and 10000')
                     else:
                         tkinter.messagebox.showinfo('Notice','Submission Sucessful')
