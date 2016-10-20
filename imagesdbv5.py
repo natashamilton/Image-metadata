@@ -9,7 +9,6 @@
 # Version History: Tkinter textboxes now expand to fill screen
 #                  Added validation for image id so now has to be a number between 1 and 10000
 #                  The dropdown menu no longer sits behind the information button
-#                  Added in "import os.path" which allows the program to read the existing file for duplicate records
 # Author:      Natasha Milton
 #
 # Created:     06/10/2016
